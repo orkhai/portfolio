@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  background: black;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  z-index: 20;
+  background: url(assets/code-solid.svg) no-repeat center;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.mobile_menu {
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(assets/icon-hamburger.svg) no-repeat center;
+}
+
+.mobile_menu_open {
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(assets/icon-close.svg) no-repeat center;
+}
+
+.mobile_menu_open_background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.mobile_navbar_options {
+  position: relative;
+  top: 10vh;
+  z-index: 2;
+  color: hsl(0, 0%, 100%);
+  transition: all ease-in 0.2s;
+  text-transform: uppercase;
+  display: none;
+  animation: slidein 0.3s ease-in forwards;
+}
+
+.mobile_navbar_options ul {
+  padding: 0;
+  font-size: 2rem;
+  line-height: 2.3;
+  list-style: none;
+  color: hsl(42, 100%, 50%);
+}
+
+.mobile_navbar_options_displayed {
+  display: block;
+  overflow: hidden;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

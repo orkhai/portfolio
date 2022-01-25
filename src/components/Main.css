@@ -1,0 +1,13 @@
+main {
+  text-align: center;
+  /* color: hsl(0, 0%, 55%); */
+  color: white;
+}
+
+main div {
+  height: 15rem;
+  width: 15rem;
+  margin: auto;
+  border-radius: 50%;
+  background: hsl(42, 100%, 50%);
+}
