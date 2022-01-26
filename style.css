@@ -10,13 +10,16 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
-  background: black;
-  text-align: center;
+  background: hsl(225, 6%, 13%);
+  /* font-family: 'Alata', sans-serif; */
 }
 
 header {
   width: 100%;
   padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background: hsl(225, 6%, 13%);
 }
 
 .navbar {
@@ -57,31 +60,16 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: hsl(0, 0%, 0%);
+  background: hsl(225, 6%, 13%);
 }
 
 .mobile_navbar_options {
   position: relative;
   top: 10vh;
   z-index: 2;
-  color: hsl(0, 0%, 100%);
-  transition: all ease-in 0.2s;
   text-transform: uppercase;
   display: none;
   animation: slidein 0.3s ease-in forwards;
-}
-
-.mobile_navbar_options ul {
-  padding: 0;
-  font-size: 2rem;
-  line-height: 2.3;
-  list-style: none;
-  color: hsl(42, 100%, 50%);
-}
-
-.mobile_navbar_options_displayed {
-  display: block;
-  overflow: hidden;
 }
 
 @keyframes slidein {
@@ -92,5 +80,60 @@ button {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.mobile_navbar_options ul {
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.3;
+  list-style: none;
+  color: hsl(41, 61%, 53%);
+  text-align: center;
+  /* color: hsl(210, 6%, 63%); */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile_navbar_options_displayed {
+  display: block;
+  overflow: hidden;
+}
+
+.desktop_navbar_options {
+  display: none;
+}
+
+main div {
+  height: 100rem;
+  width: 10rem;
+  background-color: #d0a23c;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .mobile_menu,
+  .mobile_menu_open,
+  .mobile_menu_open_background,
+  .mobile_navbar_options,
+  .mobile_navbar_options_displayed {
+    display: none;
+  }
+
+  .desktop_navbar_options {
+    width: 28rem;
+    display: inline-block;
+  }
+
+  .desktop_navbar_options ul {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: hsl(42, 100%, 50%);
   }
 }
