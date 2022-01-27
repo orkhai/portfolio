@@ -11,7 +11,6 @@ body {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
   background: hsl(225, 6%, 13%);
-  /* font-family: 'Alata', sans-serif; */
 }
 
 header {
@@ -91,7 +90,6 @@ button {
   list-style: none;
   color: hsl(41, 61%, 53%);
   text-align: center;
-  /* color: hsl(210, 6%, 63%); */
 }
 
 a {
@@ -108,11 +106,69 @@ a {
   display: none;
 }
 
+main {
+  padding: 1.5rem;
+}
+
+main h1 {
+  margin: 2.2rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(41, 61%, 53%);
+}
+
+main h2 {
+  margin: 0 0 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+main h3 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: hsl(210, 6%, 63%);
+}
+
+main p {
+  font-size: 1.12rem;
+  color: hsl(210, 6%, 63%);
+  font-family: "Alata", sans-serif;
+}
+
+main span {
+  color: hsl(41, 61%, 53%);
+}
+
+main h4 {
+  margin: 3rem 0 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-align: center;
+}
+
+main img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.top,
+.bottom {
+  width: 18rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 main div {
-  height: 100rem;
-  width: 10rem;
-  background-color: #d0a23c;
-  margin: auto;
+  text-align: center;
+}
+
+.skills {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @media (min-width: 768px) {
