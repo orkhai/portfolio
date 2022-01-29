@@ -115,6 +115,7 @@ main h1 {
   font-size: 1.5rem;
   font-weight: 300;
   color: hsl(41, 61%, 53%);
+  font-family: "Alata", sans-serif;
 }
 
 main h2 {
@@ -135,10 +136,6 @@ main p {
   font-size: 1.12rem;
   color: hsl(210, 6%, 63%);
   font-family: "Alata", sans-serif;
-}
-
-main span {
-  color: hsl(41, 61%, 53%);
 }
 
 main h4 {
@@ -169,6 +166,75 @@ main div {
 .skills {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.project {
+  margin-top: 1.5rem;
+  border-radius: 0.7rem;
+  background: hsl(225, 6%, 16%);
+}
+
+.project_info {
+  padding: 1.2rem;
+}
+
+#used,
+#used_two,
+#used_three {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.project h5 {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.project p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.project_image_one {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/desktop-design-one.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project_image_two {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/desktop-design-two.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project_image_three {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/desktop-design-three.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.project_site {
+  width: 13rem;
+  margin: 1rem auto 0.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_site a {
+  font-size: 1.15rem;
+  color: hsl(41, 61%, 53%);
 }
 
 @media (min-width: 768px) {
