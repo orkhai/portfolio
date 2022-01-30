@@ -228,24 +228,111 @@ main div {
 .project_site {
   width: 13rem;
   margin: 1rem auto 0.6rem;
+  font-size: 1.15rem;
   display: flex;
   justify-content: space-between;
-}
-
-.project_site a {
-  font-size: 1.15rem;
   color: hsl(41, 61%, 53%);
 }
 
 .more {
   display: block;
   width: 10rem;
-  margin: 1.5rem auto;
+  margin: 2rem auto;
   padding: 0.6rem;
   font-size: 1.3rem;
   color: hsl(41, 61%, 53%);
   border: 1px solid hsl(41, 61%, 53%);
   text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+.links {
+  width: 14rem;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links img {
+  height: 2rem;
+  width: 2rem;
+}
+
+footer {
+  padding: 0.5rem;
+  background: hsl(225, 6%, 12%);
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  main h3 {
+    font-size: 1.7rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+  }
+
+  .top,
+  .bottom {
+    width: 16rem;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 12rem;
+  }
+
+  .project h5 {
+    font-size: 0.9rem;
+  }
+
+  .project p {
+    font-size: 0.85rem;
+  }
+
+  #used,
+  #used_two,
+  #used_three {
+    font-size: 1rem;
+  }
+
+  .project_site {
+    width: 11rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 280px) {
+  main h2 {
+    font-size: 1.7rem;
+  }
+
+  main h3 {
+    font-size: 1.6rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main h4 {
+    font-size: 1.4rem;
+  }
+
+  .top,
+  .bottom {
+    width: 15rem;
+  }
 }
 
 @media (min-width: 768px) {
