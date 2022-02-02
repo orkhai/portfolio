@@ -53,6 +53,11 @@ button {
   background: url(assets/icon-close.svg) no-repeat center;
 }
 
+.mobile_menu:hover,
+.mobile_menu_open:hover {
+  cursor: pointer;
+}
+
 .mobile_menu_open_background {
   height: 100vh;
   width: 100%;
@@ -104,6 +109,20 @@ a {
 
 .desktop_navbar_options {
   display: none;
+}
+
+.desktop_navbar_options li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.desktop_navbar_options li:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+  padding-top: 0.5rem;
+  border-bottom: 0.185rem solid hsl(41, 61%, 53%);
 }
 
 main {
@@ -169,7 +188,7 @@ main div {
 }
 
 .project {
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
   border-radius: 0.7rem;
   background: hsl(225, 6%, 16%);
 }
@@ -234,6 +253,15 @@ main div {
   color: hsl(41, 61%, 53%);
 }
 
+.project_site a:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  padding-top: 0.5rem;
+  border-bottom: 0.185rem solid hsl(41, 61%, 53%);
+}
+
 .more {
   display: block;
   width: 10rem;
@@ -243,6 +271,11 @@ main div {
   color: hsl(41, 61%, 53%);
   border: 1px solid hsl(41, 61%, 53%);
   text-align: center;
+}
+
+.more:hover,
+.links a:hover {
+  transform: scale(1.05);
 }
 
 .contact {
@@ -335,6 +368,22 @@ footer {
   }
 }
 
+@media (min-width: 494px) {
+  main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 712px) {
+  header {
+    padding: 1.5rem 2.5rem;
+  }
+
+  main {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .mobile_menu,
   .mobile_menu_open,
@@ -355,5 +404,141 @@ footer {
     justify-content: space-between;
     list-style: none;
     color: hsl(42, 100%, 50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  main {
+    padding: 1.5rem 3rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h2,
+  main h3 {
+    font-size: 2.3rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  main h4 {
+    font-size: 1.8rem;
+  }
+
+  main img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .top,
+  .bottom {
+    width: 27rem;
+    margin: 3rem auto;
+  }
+
+  #used,
+  #used_two,
+  #used_three {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .project {
+    width: 86%;
+    margin: 2rem auto;
+  }
+
+  .project_info {
+    padding: 2rem;
+  }
+
+  .project h5 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 25rem;
+  }
+
+  .project_site {
+    width: 15rem;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+  }
+
+  .more {
+    margin: 2.5rem auto;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    width: 38rem;
+    margin: 1rem auto 2rem;
+    line-height: 1.5;
+  }
+
+  .links {
+    width: 16rem;
+  }
+
+  .links img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 1.5rem 8rem;
+  }
+
+  main {
+    padding: 1.5rem 8rem;
+  }
+
+  main h4 {
+    margin: 5rem 0 0;
+  }
+
+  .project {
+    display: flex;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 20rem;
+    width: 40%;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .project_info {
+    width: 60%;
+  }
+
+  .project_site {
+    margin: 1rem auto 0;
   }
 }
