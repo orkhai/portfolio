@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  background: hsl(225, 6%, 13%);
+}
+
+header {
+  width: 100%;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background: hsl(225, 6%, 13%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 1.8rem;
+  width: 1.8rem;
+  z-index: 20;
+  background: url(assets/code-solid.svg) no-repeat center;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.mobile_menu {
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(assets/icon-hamburger.svg) no-repeat center;
+}
+
+.mobile_menu_open {
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(assets/icon-close.svg) no-repeat center;
+}
+
+.mobile_menu:hover,
+.mobile_menu_open:hover {
+  cursor: pointer;
+}
+
+.mobile_menu_open_background {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsl(225, 6%, 13%);
+}
+
+.mobile_navbar_options {
+  position: relative;
+  top: 10vh;
+  z-index: 2;
+  text-transform: uppercase;
+  display: none;
+  animation: slidein 0.3s ease-in forwards;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile_navbar_options ul {
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.3;
+  list-style: none;
+  color: hsl(41, 61%, 53%);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile_navbar_options_displayed {
+  display: block;
+  overflow: hidden;
+}
+
+.desktop_navbar_options {
+  display: none;
+}
+
+.desktop_navbar_options li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.desktop_navbar_options li:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+  padding-top: 0.5rem;
+  border-bottom: 0.185rem solid hsl(41, 61%, 53%);
+}
+
+main {
+  padding: 1.5rem;
+}
+
+main h1 {
+  margin: 2.2rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(41, 61%, 53%);
+  font-family: "Alata", sans-serif;
+}
+
+main h2 {
+  margin: 0 0 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+main h3 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: hsl(210, 6%, 63%);
+}
+
+main p {
+  font-size: 1.12rem;
+  color: hsl(210, 6%, 63%);
+  font-family: "Alata", sans-serif;
+}
+
+main h4 {
+  margin: 3rem 0 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-align: center;
+}
+
+main img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.top,
+.bottom {
+  width: 18rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main div {
+  text-align: center;
+}
+
+.skills {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.project {
+  margin-top: 1.8rem;
+  border-radius: 0.7rem;
+  background: hsl(225, 6%, 16%);
+}
+
+.project_info {
+  padding: 1.2rem;
+}
+
+#used,
+#used_two,
+#used_three {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.project h5 {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.project p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.project_image_one {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/tlp.png) no-repeat center;
+  background-size: cover;
+}
+
+.project_image_two {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/twj.png) no-repeat center;
+  background-size: cover;
+}
+
+.project_image_three {
+  height: 14rem;
+  width: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  background: url(/assets/isafred.png) no-repeat center;
+  background-size: cover;
+}
+
+.project_site {
+  width: 13rem;
+  margin: 1rem auto 0.6rem;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(41, 61%, 53%);
+}
+
+.project_site a:hover::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  padding-top: 0.5rem;
+  border-bottom: 0.185rem solid hsl(41, 61%, 53%);
+}
+
+.more {
+  display: block;
+  width: 10rem;
+  margin: 2rem auto;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  color: hsl(41, 61%, 53%);
+  border: 1px solid hsl(41, 61%, 53%);
+  text-align: center;
+}
+
+.more:hover,
+.links a:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  text-align: center;
+}
+
+.links {
+  width: 14rem;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links img {
+  height: 2rem;
+  width: 2rem;
+}
+
+footer {
+  padding: 0.5rem;
+  background: hsl(225, 6%, 12%);
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  main h3 {
+    font-size: 1.7rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+  }
+
+  .top,
+  .bottom {
+    width: 16rem;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 12rem;
+  }
+
+  .project h5 {
+    font-size: 0.9rem;
+  }
+
+  .project p {
+    font-size: 0.85rem;
+  }
+
+  #used,
+  #used_two,
+  #used_three {
+    font-size: 1rem;
+  }
+
+  .project_site {
+    width: 11rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 280px) {
+  main h2 {
+    font-size: 1.7rem;
+  }
+
+  main h3 {
+    font-size: 1.6rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main h4 {
+    font-size: 1.4rem;
+  }
+
+  .top,
+  .bottom {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 494px) {
+  main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 712px) {
+  header {
+    padding: 1.5rem 2.5rem;
+  }
+
+  main {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile_menu,
+  .mobile_menu_open,
+  .mobile_menu_open_background,
+  .mobile_navbar_options,
+  .mobile_navbar_options_displayed {
+    display: none;
+  }
+
+  .desktop_navbar_options {
+    width: 28rem;
+    display: inline-block;
+  }
+
+  .desktop_navbar_options ul {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: hsl(42, 100%, 50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  main {
+    padding: 1.5rem 3rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h2,
+  main h3 {
+    font-size: 2.3rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+
+  main h4 {
+    font-size: 1.8rem;
+  }
+
+  main img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .top,
+  .bottom {
+    width: 27rem;
+    margin: 3rem auto;
+  }
+
+  #used,
+  #used_two,
+  #used_three {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .project {
+    width: 86%;
+    margin: 2rem auto;
+  }
+
+  .project_info {
+    padding: 2rem;
+  }
+
+  .project h5 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 25rem;
+  }
+
+  .project_site {
+    width: 15rem;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+  }
+
+  .more {
+    margin: 2.5rem auto;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .contact {
+    width: 38rem;
+    margin: 1rem auto 2rem;
+    line-height: 1.5;
+  }
+
+  .links {
+    width: 16rem;
+  }
+
+  .links img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 1.5rem 8rem;
+  }
+
+  main {
+    padding: 1.5rem 8rem;
+  }
+
+  main h4 {
+    margin: 5rem 0 0;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+  }
+
+  .project_image_one,
+  .project_image_two,
+  .project_image_three {
+    height: 20rem;
+    width: 40%;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .project_info {
+    width: 60%;
+  }
+
+  .project_site {
+    margin: 1rem auto 0;
+  }
+}
